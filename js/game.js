@@ -18,7 +18,7 @@ var bgImage = new Image();
 bgImage.onload = function () {
 	bgReady = true;
 };
-bgImage.src = "images/background2.png";
+bgImage.src = "images/background2.jpg";
 
 // Hero image
 var heroReady = false;
@@ -26,7 +26,7 @@ var heroImage = new Image();
 heroImage.onload = function () {
 	heroReady = true;
 };
-heroImage.src = "images/hero2.png";
+heroImage.src = "images/hero3.png";
 
 // Monster image
 var monsterReady = false;
@@ -34,7 +34,7 @@ var monsterImage = new Image();
 monsterImage.onload = function () {
 	monsterReady = true;
 };
-monsterImage.src = "images/monster2.png";
+monsterImage.src = "images/monster3.png";
 
 
 var drawFrame = function(mnstr, frameno, x, y, a) {
@@ -188,7 +188,7 @@ var render = function () {
 	ctx.font = "24px Helvetica";
 	ctx.textAlign = "left";
 	ctx.textBaseline = "top";
-	ctx.fillText("Bella Caught Times: " + monstersCaught, 32, 32);
+	ctx.fillText("Bella Caught Times: " + monstersCaught, 5, 5);
 };
 
 // The main game loop
